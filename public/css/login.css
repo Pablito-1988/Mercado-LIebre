@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.wrapper{
+    background-color: #ebebeb;
+}
+
+form{
+    display: flex;
+    width: 100%;
+    background-color: #ebebeb;
+    /* padding: 6%; */
+    margin-bottom: 10%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    /* border: solid 3px #1259c3;
+    border-radius: 6px; */
+    
+}
+form input{
+    margin: 15px;
+}
+.title{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.box{
+    border-radius: 3px;
+    padding: 2%;
+    font-size: 18px;
+    border: 0;
+    margin-bottom: 5%;
+}
+.button-i {
+    background-color: #1259c3;
+    color: white;
+    text-decoration: none;
+    margin: 1%;
+    width: 96%;
+    border-radius: 5px;
+    padding: 3%;
+    text-align: center;
+    margin-bottom: 6%;
+    border: 0;
+    box-shadow: 5px 5px 10px grey;
+}
+.button-i:hover{
+    background-color: rgb(25, 181, 75);
+    color: white;
+}
+
+@media(min-width: 361px){
+    
+    form{
+    display: flex;
+    width: 100%;
+    background-color: #ebebeb;
+    /* padding: 6%; */
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    }
+    
+}
+
+@media(min-width: 767px){
+    form {
+    display: flex;
+    width: 35%;
+    background-color: #ebebeb;
+    /* padding: 6% */;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px 34%;
+}
+}
+@media(min-width: 1000px){
+    form {
+    display: flex;
+    width: 32%;
+    background-color: #ebebeb;
+    padding-top: 2%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* align-items: center; */
+    margin: 0px 34%;
+    align-content: center;
+    }
+    
+    footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    height: 20%;
+    gap: 5px;
+    }
+    .item-{
+        justify-content: flex-end;
+    }
+    .button-i {
+    background-color: #1259c3;
+    color: white;
+    text-decoration: none;
+    margin: 3%;
+    width: 90%;
+    border-radius: 5px;
+    padding: 3%;
+    text-align: center;
+    }
+    .title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 6%;
+    }
+    .box {
+    border-radius: 3px;
+    padding: 2%;
+    width: 100%;
+    font-size: 19px;
+    border: 0;
+    margin-bottom: 5%;
+}
+}
