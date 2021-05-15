@@ -13,7 +13,7 @@ form{
     width: 100%;
     background-color: #ebebeb;
     padding: 6%;
-    margin-bottom: 2%;
+    /* margin-bottom: 2%; */
     flex-wrap: wrap;
     flex-direction: column;
     align-items: flex-start;
@@ -44,9 +44,9 @@ form input{
     color: white;
     text-decoration: none;
     margin-bottom: 3%;
-    width: 100%;
+    width: 40%;
     border-radius: 5px;
-    padding: 5%;
+    padding: 3%;
     text-align: center;
     border: 0;
     box-shadow: 5px 5px 10px grey;
@@ -54,6 +54,11 @@ form input{
     
 
 }
+.button-container{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
 #button-enviar:hover{
     background-color: rgb(25, 181, 75);
     color: white;
@@ -79,29 +84,49 @@ form input{
 }
 
 @media(min-width: 769px){
-    form {
-    display: flex;
-    width: 25%;
-    background-color: #ebebeb;
-    padding: 6%;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 0px 40%;
-}
+    
+    .in-line-data{
+        display: block;
+    }
 }
 @media(min-width: 1000px){
     form {
-    display: flex;
-    width: 32%;
+    display: block;
+    width: 90%;
     background-color: #ebebeb;
     padding-top: 2%;
-    flex-wrap: wrap;
-    flex-direction: column;
+    /* flex-wrap: wrap;
+    flex-direction: column; */
     /* align-items: center; */
-    margin: 0px 34%;
+    /* margin: 0px 34%;
     align-content: center;
+     */
     }
+    .button-i {
+    background-color: #1259c3;
+    color: white;
+    text-decoration: none;
+    /* margin-bottom: 3%; */
+    width: 41%;
+    border-radius: 5px;
+    padding: 2%;
+    text-align: center;
+    border: 0;
+    box-shadow: 5px 5px 10px grey;
+    /* transition: 0.6s; */
+}
+    .button-container{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .box {
+    border-radius: 3px;
+    padding: 1%;
+    font-size: 18px;
+    border: 0;
+    width: 100%;
+}
     footer {
     display: flex;
     flex-wrap: nowrap;

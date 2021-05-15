@@ -19,7 +19,7 @@
     
         <div class="logo_grapper">
             <div>
-                <img class="logo_main" src="/css/img/logo-mercado-liebre.svg" alt="">
+                <a href="/"><img class="logo_main" src="/css/img/logo-mercado-liebre.svg" alt=""></a>
             </div>
             <div class="search-bar">
                 <input class="search" type="text" placeholder="Buscar productos, marcas"><button><i
@@ -51,21 +51,21 @@
 
         <div class="wrapper">
             <form action="/" method="GET">
-                <div>
-                    <label class="title" for="nombre-apellido">Nombre y apellido</label>
-                    <input class="box" type="text" name="nombre-apellido" id="nombre-apellido" value="" required>
+                <div class="in-line-data">
+                    <label class="title" for="nombre-apellido"></label>
+                    <input class="box" type="text" name="nombre-apellido" id="nombre-apellido" value="" placeholder="Nombre y apellido" required>
                 </div>
                 <div>
-                    <label class="title" for="nombre-usuario">Nombre de usuari@</label>
-                    <input class="box" type="email" name="nombre-usuario" id="nombre-usuario" value="" required>
+                    <label class="title" for="nombre-usuario"></label>
+                    <input class="box" type="email" name="nombre-usuario" id="nombre-usuario" value="" placeholder="Nombre de usuari@" required>
                 </div>
-                <div>
+                <div class="born-date">
                     <label class="title" for="fecha-nacimiento">Fecha de nacimiento</label>
                     <input class="box" type="date" name="fecha-nacimiento" id="fecha-nacimiento" value="" required>
                 </div>
                 <div>
-                    <label class="title" for="domicilio">Domicilio</label>
-                    <input class="box" type="text" name="domicilio" id="domicilio" value="" required>
+                    <label class="title" for="domicilio"></label>
+                    <input class="box" type="text" name="domicilio" id="domicilio" value="" placeholder="Domicilio" required>
                 </div>
 
                 <div>
@@ -80,19 +80,19 @@
                 <div>
                     <label class="title" for="intereses">Intereses</label>
                         <div>
-                            <input class="check" type="checkbox" name="intereses" value="electro" >electro
+                            <input class="check" type="checkbox" name="intereses" value="electro" > Electro
                         </div>
                         <div>
-                            <input class="check" type="checkbox" name="intereses" value="Moda">Moda
+                            <input class="check" type="checkbox" name="intereses" value="Moda"> Moda
                         </div>
                         <div>
-                            <input class="check" type="checkbox" name="intereses" value="Hogar">Hogar
+                            <input class="check" type="checkbox" name="intereses" value="Hogar"> Hogar
                         </div>
                         <div>
-                            <input class="check" type="checkbox" name="intereses" value="jugueteria">Juguetería
+                            <input class="check" type="checkbox" name="intereses" value="jugueteria"> Juguetería
                         </div>
                         <div>
-                            <input class="check" type="checkbox" name="intereses" value="vidasana">Vida sana
+                            <input class="check" type="checkbox" name="intereses" value="vidasana"> Vida sana
                         </div>
                 </div> 
                 <div>          
@@ -100,19 +100,21 @@
                     <input type="file">
                 </div>
                 <div>
-                    <label class="title" for="password">Contraseña</label>
-                    <input class="box" type="password" name="password" id="password">
+                    <label class="title" for="password"></label>
+                    <input class="box" type="password" name="password" placeholder="Contraseña" id="password">
                 </div>
                 <div> 
-                    <label class="title" for="confirm-password">Confirmar contraseña</label>
-                    <input class="box" type="password" name="confirm-password" id="confirm-password">
+                    <label class="title" for="confirm-password"></label>
+                    <input class="box" type="password" name="confirm-password" placeholder="Confirmar contraseña" id="confirm-password">
                 </div>
-
+                <div class="button-container">
                <button    id="button-enviar" class="button-i" type="submit">Enviar</button>
                <button  id="button-borrar" class="button-i" type="reset">Borrar todo</button>
-                
+                </div>
 
             </form>
+
+            
         </div>
             <footer>
                 <article class="footer_article">

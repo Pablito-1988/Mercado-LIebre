@@ -37,8 +37,8 @@ form input{
     margin-bottom: 5%;
 }
 .button-i {
-    background-color: #1259c3;
-    color: white;
+    background-color: rgb(18, 18, 248);
+    color:white;
     text-decoration: none;
     margin: 1%;
     width: 96%;
@@ -48,9 +48,10 @@ form input{
     margin-bottom: 6%;
     border: 0;
     box-shadow: 5px 5px 10px grey;
+    transition:  0.5s;
 }
 .button-i:hover{
-    background-color: rgb(25, 181, 75);
+    background-color: #0022AA;
     color: white;
 }
 
@@ -95,7 +96,7 @@ form input{
     
     footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     height: 20%;
@@ -105,8 +106,8 @@ form input{
         justify-content: flex-end;
     }
     .button-i {
-    background-color: #1259c3;
-    color: white;
+    /* background-color: grey;
+    color: black; */
     text-decoration: none;
     margin: 3%;
     width: 90%;
