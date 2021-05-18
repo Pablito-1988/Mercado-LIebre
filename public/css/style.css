@@ -33,6 +33,14 @@ body{
     border-bottom-left-radius:3px;
     border-bottom-left-radius: 3px;
     flex-grow: 5;
+    height: 40px;
+}
+.search-bar button{
+    height: 40px;
+    border: 0;
+    background-color: white;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
 
 
@@ -284,7 +292,11 @@ main{
     border-bottom-left-radius: 3px;
     width: 70%;
     margin-left: 15%;
+    height: 30px;
 }   
+    .search-bar button{
+        height: 30px;
+    }
     .search-bar{
         flex-grow: 2;
     }
