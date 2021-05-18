@@ -8,7 +8,7 @@
     background-color: #ebebeb;
 }
 
-form{
+#login{
     display: flex;
     width: 100%;
     background-color: #ebebeb;
@@ -21,7 +21,7 @@ form{
     border-radius: 6px; */
     
 }
-form input{
+#login input{
     margin: 15px;
 }
 .title{
@@ -57,7 +57,7 @@ form input{
 
 @media(min-width: 361px){
     
-    form{
+    #login{
     display: flex;
     width: 100%;
     background-color: #ebebeb;
@@ -70,7 +70,7 @@ form input{
 }
 
 @media(min-width: 767px){
-    form {
+    #login {
     display: flex;
     width: 35%;
     background-color: #ebebeb;
@@ -82,7 +82,7 @@ form input{
 }
 }
 @media(min-width: 1000px){
-    form {
+    #login {
     display: flex;
     width: 32%;
     background-color: #ebebeb;

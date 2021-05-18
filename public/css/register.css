@@ -8,7 +8,7 @@
     background-color: #ebebeb;
 }
 
-form{
+#register{
     display: flex;
     width: 100%;
     background-color: #ebebeb;
@@ -22,8 +22,9 @@ form{
     
 }
 
-form input{
+#register input{
     margin: 15px;
+    background-color: white;
 }
 .title{
     font-weight: bold;
@@ -71,7 +72,7 @@ form input{
 
 @media(min-width: 361px){
     
-    form{
+    #register{
     display: flex;
     width: 100%;
     background-color: #ebebeb;
@@ -90,7 +91,7 @@ form input{
     }
 }
 @media(min-width: 1000px){
-    form {
+    #register {
     display: block;
     width: 90%;
     background-color: #ebebeb;
