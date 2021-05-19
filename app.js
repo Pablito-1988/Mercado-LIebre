@@ -1,12 +1,13 @@
 const express = require('express') // trae el modulo de express para poder montar el servidor
 const path = require('path') //requiere el modulo nativo path de node
 const app = express()
+const port = process.env.PORT || 3001
 publicPath = path.join(__dirname, 'public') // indica que la ruta contiene recursos estaticos para consumir de manera sencilla
 console.log(publicPath)
 
 app.use(express.static(publicPath));
 
-app.listen(3001, () => console.log('Servidor corriendo en el puerto 3001'))
+app.listen(port, () => console.log('Servidor corriendo en el puerto 3001'))
 
 app.get('/', (req, res) => {
 
