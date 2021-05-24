@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/icon2.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/register.css">
+    <title>Mercado Liebre Argentina</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    
+    <script src="https://kit.fontawesome.com/641c03bd1a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <%-include('./partials/header')%>
+
+        <div class="wrapper">
+            <form id="register" action="/" method="GET">
+                <div class="in-line-data">
+                    <label class="title" for="nombre-apellido"></label>
+                    <input class="box" type="text" name="nombre-apellido" id="nombre-apellido" value="" placeholder="Nombre y apellido" required>
+                </div>
+                <div>
+                    <label class="title" for="nombre-usuario"></label>
+                    <input class="box" type="email" name="nombre-usuario" id="nombre-usuario" value="" placeholder="Nombre de usuari@" required>
+                </div>
+                <div class="born-date">
+                    <label class="title" for="fecha-nacimiento">Fecha de nacimiento</label>
+                    <input class="box" type="date" name="fecha-nacimiento" id="fecha-nacimiento" value="" required>
+                </div>
+                <div>
+                    <label class="title" for="domicilio"></label>
+                    <input class="box" type="text" name="domicilio" id="domicilio" value="" placeholder="Domicilio" required>
+                </div>
+
+                <div>
+                <label class="title" for="perfil">Perfil del usuario</label>
+                    <div>
+                        <input class="radio" type="radio" name="perfil" value="Comprador">Comprador
+                    </div>
+                    <div>
+                        <input class="radio" type="radio" name="perfil" value="Vender">Vendedor
+                    </div>
+                </div>
+                <div>
+                    <label class="title" for="intereses">Intereses</label>
+                        <div>
+                            <input class="check" type="checkbox" name="intereses" value="electro" > Electro
+                        </div>
+                        <div>
+                            <input class="check" type="checkbox" name="intereses" value="Moda"> Moda
+                        </div>
+                        <div>
+                            <input class="check" type="checkbox" name="intereses" value="Hogar"> Hogar
+                        </div>
+                        <div>
+                            <input class="check" type="checkbox" name="intereses" value="jugueteria"> Juguetería
+                        </div>
+                        <div>
+                            <input class="check" type="checkbox" name="intereses" value="vidasana"> Vida sana
+                        </div>
+                </div> 
+                <div>          
+                    <label class="title" for="file">Foto del usuario</label>
+                    <input type="file">
+                </div>
+                <div>
+                    <label class="title" for="password"></label>
+                    <input class="box" type="password" name="password" placeholder="Contraseña" id="password">
+                </div>
+                <div> 
+                    <label class="title" for="confirm-password"></label>
+                    <input class="box" type="password" name="confirm-password" placeholder="Confirmar contraseña" id="confirm-password">
+                </div>
+                <div class="button-container">
+               <button    id="button-enviar" class="button-i" type="submit">Enviar</button>
+               <button  id="button-borrar" class="button-i" type="reset">Borrar todo</button>
+                </div>
+
+            </form>
+
+            
+        </div>
+            <%-include('./partials/footer')%>
+    
+</body>
+</html>
