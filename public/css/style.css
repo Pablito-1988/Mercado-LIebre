@@ -313,6 +313,7 @@ main{
     gap: 6px;
     align-items: center;
     justify-content: space-around;
+    
 } 
     .site {
     display: flex;

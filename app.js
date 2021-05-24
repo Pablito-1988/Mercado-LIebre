@@ -6,18 +6,19 @@ publicPath = path.join(__dirname, 'public') // indica que la ruta contiene recur
 console.log(publicPath)
 
 app.use(express.static(publicPath));
+app.set('view engine', 'ejs')
 
 app.listen(port, () => console.log('Servidor corriendo en el puerto 3001'))
 
 app.get('/', (req, res) => {
 
-    res.sendFile(path.resolve(__dirname, './views/home.html'))
+    res.render('home')
 })
 app.get('/register', (req, res) => {
 
-    res.sendFile(path.resolve(__dirname, './views/register.html'))
+    res.render('register')
 })
 app.get('/login', (req, res) => {
 
-    res.sendFile(path.resolve(__dirname, './views/login.html'))
+    res.render('login')
 })
