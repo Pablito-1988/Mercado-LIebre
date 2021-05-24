@@ -5,7 +5,7 @@ const port = process.env.PORT || 3001
 const rutaMain= require('./routes/main')
 
 publicPath = path.join(__dirname, '../public') // indica que la ruta contiene recursos estaticos para consumir de manera sencilla
-
+app.set('views', path.join(__dirname, 'views'))
 /* console.log(publicPath) */
 app.use(express.static(publicPath));
 app.set('view engine', 'ejs')
